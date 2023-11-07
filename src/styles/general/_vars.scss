@@ -1,0 +1,46 @@
+//colors
+$main-color: #fff;
+$text-color--white: #fff;
+$text-color--grey_light: rgba(255, 255, 255, 0.8);
+$text-color--grey: #595e64;
+$text-color--grey_dark: #3b3e43;
+$text-color-green: #00a077;
+$button-text-color: #57b3fe;
+
+//opacity
+$opacity-strong: 0.8;
+$opacity-ligth: 0.5;
+
+//weight
+$weight--light: 400;
+$weight: 500;
+$weight--strong: 700;
+
+//font-sizes
+$fz--xxs: 1.2rem;
+$fz--xs: 1.4rem;
+$fz--s: 1.5rem;
+$fz--m: 1.6rem;
+$fz--l: 2rem;
+$fz--xl: 2.2rem;
+$fz--xl: 4.8rem;
+$fz--xxl: 6.8rem;
+
+//line-height
+$lh-xxxs: 1.4rem;
+$lh-xxs: 1.6rem;
+$lh-xs: 2rem;
+$lh-s: 2.4rem;
+$lh-m: 3rem;
+$lh-l: 3.4rem;
+$lh-xl: 5.8rem;
+$lh-xxl: 8.16rem;
+
+//width
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1170;
+$md1: $maxWidthContainer + 12px;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;

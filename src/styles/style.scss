@@ -1,6 +1,11 @@
-body {
-  background-color: rgb(118, 149, 177);
-  p {
-    color: rgb(239, 246, 242);
-  }
-}
+@import './src/styles/general/vars';
+@import './general/_reset.scss';
+@import './general/_fonts.scss';
+
+@import './general/_global.scss';
+
+@import './components/_buttons.scss';
+@import './components/_cards.scss';
+@import './components/_header.scss';
+@import './components/_main.scss';
+@import './components/_footer.scss';

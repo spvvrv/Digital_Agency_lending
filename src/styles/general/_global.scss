@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //10px
+  @media (max-width: 640px) {
+    font-size: 45%;
+  }
+}
+body {
+  background-color: $text-color--grey;
+  font-size: $fz--m;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: $weight--light;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  // &._loaded {
+  // }
+}
+
+._container {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  @media (max-width: $md1) {
+    max-width: 750px;
+  }
+  @media (max-width: $md2) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
