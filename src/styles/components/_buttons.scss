@@ -1,0 +1,23 @@
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: $fz--xs;
+  line-height: $lh-xxxs;
+  padding: 0px 0px;
+  background-color: $main-color;
+  color: $button-text-color;
+  text-transform: uppercase;
+  border-radius: 6rem;
+  padding: 2rem 5rem;
+  border: none;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  @media (min-width: $md2) {
+    &:hover {
+      color: $main-color;
+      background-color: $button-text-color;
+    }
+  }
+}

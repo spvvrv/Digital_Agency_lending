@@ -1,0 +1,21 @@
+.start {
+  background: linear-gradient(270deg, #35D3FF -0.64%, #A963FB 103.6%);
+  &__content {
+    display: flex;
+    padding-top: 151px;
+    padding-bottom: 143px;
+  }
+  &__content-text {
+    color: $text-color--white;
+    font-size: $fz--l;
+    font-weight: $weight;
+    line-height: 170%;
+    margin-bottom: 3rem;
+  }
+  &__content-info {
+    max-width: 399px;
+  }
+  &__btn {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,32 @@
+.footer {
+  background-color: #0d0d0d;
+  &__content {
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__media {
+    img {
+      margin-right: 2rem;
+    }
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+  &__text {
+    color: $text-color--grey_light;
+    font-size: $fz--s;
+    font-weight: $weight;
+    line-height: 133.333%;
+    padding-right: 2.4rem;
+  }
+}

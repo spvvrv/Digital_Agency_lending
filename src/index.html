@@ -2,13 +2,16 @@
 <html lang="en">
   @@include('html/_head.html', { "title": "A Digital Product Design Agency" })
   <body>
-    @@include('html/_header.html')
-    <main class="main">
-      @@include('html/_main_section-starting-page.html', {})
-      @@include('html/_main_section-help.html', {})
-      @@include('html/_main_section-start.html', {})
-    </main>
-    @@include('html/_footer.html', {})
+    <div class="wrapper">
+      <main class="main">
+        @@include('html/_main_section-starting-page.html', {})
+        @@include('html/_main_section-help.html', {})
+        @@include('html/_main_section-process.html', {})
+        @@include('html/_main_section-brands.html', {})
+        @@include('html/_main_section-start.html', {})
+      </main>
+      @@include('html/_footer.html', {})
+    </div>
     <script src="js/app.min.js"></script>
   </body>
 </html>
