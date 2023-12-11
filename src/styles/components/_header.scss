@@ -1,13 +1,21 @@
 .header {
   &__content {
     max-width: 1800px;
-    padding: 33px 60px 0px 60px;
+    padding: 35px 10px;
     margin: 0 auto;
+    @media (max-width: $md1) {
+      padding: 35px 10px 10px;
+    }
   }
   &__menu {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: $md1) {
+      justify-content: center;
+      gap: 30px;
+    }
   }
 }
 
@@ -58,6 +66,11 @@
       font-size: $lh-xl;
       display: block;
       text-align: center;
+    }
+  }
+  &__button {
+    @media (max-width: $md1) {
+      display: none;
     }
   }
 }

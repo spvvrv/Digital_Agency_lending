@@ -8,6 +8,10 @@
     text-align: center;
     padding-top: 184px;
     padding-bottom: 184px;
+    @media (max-width: $md1) {
+      padding-bottom: 90px;
+      padding-top: 45px;
+    }
   }
   &__content-title {
     max-width: 897px;

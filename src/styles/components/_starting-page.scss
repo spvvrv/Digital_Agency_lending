@@ -1,12 +1,12 @@
 .starting-page {
-  background: url(../images/hero-bg.png) no-repeat;
+  background: url(../images/hero-bg.png) top no-repeat;
   &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding-top: 10rem;
+    padding-top: 5rem;
   }
   &__content {
     flex: 1 1 auto;
@@ -16,6 +16,9 @@
     text-align: center;
     justify-content: center;
     padding-bottom: 184px;
+    @media (max-width: $md1) {
+      padding-bottom: 90px;
+    }
   }
   &__subtitle {
     margin-bottom: 4rem;

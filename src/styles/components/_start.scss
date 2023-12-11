@@ -1,9 +1,18 @@
 .start {
-  background: linear-gradient(270deg, #35D3FF -0.64%, #A963FB 103.6%);
+  background: linear-gradient(270deg, #35d3ff -0.64%, #a963fb 103.6%);
   &__content {
     display: flex;
     padding-top: 151px;
     padding-bottom: 143px;
+    @media (max-width: $md1) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      gap: 50px;
+      padding-top: 75px;
+      padding-bottom: 70px;
+    }
   }
   &__content-text {
     color: $text-color--white;
@@ -14,6 +23,9 @@
   }
   &__content-info {
     max-width: 399px;
+    @media (max-width: $md1) {
+      max-width: none;
+    }
   }
   &__btn {
     margin-bottom: 0;
