@@ -1,85 +1,118 @@
 .footer {
   background-color: #0d0d0d;
+}
+.footer__content {
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+}
+.footer__menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__media a {
+  margin-right: 2rem;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+.footer__media a:last-child {
+  margin-right: 0;
+}
+.footer__media a:hover {
+  opacity: 1;
+}
 
-  &__content {
-    padding-top: 8rem;
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+.footer__text {
+  color: $text-color--grey_light;
+  font-size: $fz--s;
+  font-weight: 400;
+  line-height: 133.333%;
+  margin-right: 2.4rem;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+.footer__text.not-hoverable {
+  opacity: 0.8;
+  pointer-events: none;
+  padding-right: 2.4rem;
+}
+
+.footer__text:hover {
+  opacity: 1;
+}
+.footer__text:last-child {
+  margin-right: 0;
+}
+.footer_text:first-child {
+  margin-right: auto;
+}
+.footer__text.privacy,
+.footer__text.term {
+  margin-left: auto;
+}
+
+.footer__line {
+  width: 100%; /* Занимает всю доступную ширину */
+  height: 1px;
+  border: 1px solid #fff;
+  opacity: 0.35;
+  margin: 27px 0; /* Устанавливает отступы сверху и снизу линии (можете настроить по своему усмотрению) */
+}
+
+//media
+@media (max-width: $md1) {
+  .footer__content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .footer__menu {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .footer__media img {
+    padding-bottom: 5px;
+  }
+  .footer__links {
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+  .footer_text:first-child {
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: $md2) {
+  .footer__links {
+    padding: 0;
     display: flex;
     flex-direction: column;
-
-    @media (max-width: $md1) {
-      padding-top: 40px;
-      padding-bottom: 40px;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-    }
   }
-
-  &__menu {
+  .footer__right {
+    margin: 0;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-
-    @media (max-width: $md1) {
-      flex-direction: column;
-      gap: 30px;
-    }
+    flex-direction: column;
   }
-
-  &__media {
-    img {
-      margin-right: 2rem;
-
-      &:last-child {
-        margin-right: 0;
-      }
-
-      @media (max-width: $md1) {
-        padding-bottom: 5px;
-      }
-    }
+  .footer__text.term {
+    margin: 0;
   }
-
-  &__img-line {
-    @media (max-width: $md1) {
-      display: none;
-    }
+  .footer__text.not-hoverable {
+    padding: 0;
   }
-
-  &__links {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 3rem;
-    padding-bottom: 4rem;
-    @media (max-width: $md1) {
-      justify-content: center;
-      padding-top: 15px;
-      padding-bottom: 0;
-    }
-  }
-
-  &__text {
-    color: $text-color--grey_light;
-    font-size: $fz--s;
-    font-weight: $weight;
-    line-height: 133.333%;
-    margin-right: 2.4rem;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  &__text:first-child {
-    margin-right: auto;
-    @media (max-width: $md1) {
-      margin-right: 24px;
-    }
-  }
-
-  &__text.privacy,
-  &__text.term {
-    margin-left: auto; /* Выравниваем "Privacy policy" и "Term of service" справа */
+  .footer__line {
+    margin: 10px 0;
   }
 }

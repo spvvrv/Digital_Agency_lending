@@ -1,30 +1,34 @@
-<footer class="footer">
+<footer class="footer" id="footer">
   <div class="footer__container _container">
     <div class="footer__content">
-      <div class="footer__menu menu">
-        <img src="./images/svg/logotype.svg" alt="" />
+      <div class="footer__menu">
+        <a href="#starting">
+          <img src="./images/svg/logotype.svg" alt="Logo" />
+        </a>
         <nav class="menu__body">
-          <ul class="menu__list">
-            <li><a href="" class="menu__link">Home</a></li>
-            <li><a href="" class="menu__link">Your benefits</a></li>
-            <li><a href="" class="menu__link">Our process</a></li>
-            <li><a href="" class="menu__link">Our works</a></li>
-            <li><a href="" class="menu__link">Testimonials</a></li>
-            <li><a href="" class="menu__link">Start a project</a></li>
-          </ul>
+          <ul class="menu__list" id="dynamicMenuFooter"></ul>
         </nav>
-        <div class="footer__media">
-          <img src="./images/png/Facebook.png" alt="" />
-          <img src="./images/png/Instagram.png" alt="" />
-          <img src="./images/png/Twitter.png" alt="" />
-        </div>
+        <div class="footer__media" id="dynamicFooterMedia"></div>
       </div>
-
-      <img class="footer__img-line" src="./images/svg/line-footer.svg" alt="" />
+      <div class="footer__line"></div>
       <div class="footer__links">
-        <span class="footer__text">© 2021 Company</span>
-        <a href="#" class="footer__text">Privacy policy</a>
-        <a href="#" class="footer__text">Term of service</a>
+        <div class="footer__left">
+          <span class="footer__text not-hoverable">2024 Moscow</span>
+        </div>
+        <div class="footer__right">
+          <a
+            href="https://github.com/spvvrv"
+            class="footer__text term"
+            target="_blank"
+            >Github</a
+          >
+          <a
+            href="https://t.me/spvvrv"
+            class="footer__text term"
+            target="_blank"
+            >Telegram</a
+          >
+        </div>
       </div>
     </div>
   </div>

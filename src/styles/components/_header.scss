@@ -1,80 +1,98 @@
-.header {
-  &__content {
-    max-width: 1800px;
-    padding: 35px 10px;
-    margin: 0 auto;
-    @media (max-width: $md1) {
-      padding: 35px 10px 10px;
-    }
-  }
-  &__menu {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    @media (max-width: $md1) {
-      justify-content: center;
-      gap: 30px;
-    }
-  }
-}
+// /* Общие стили для блока .header__content */
 
-.menu {
-  &__body {
-    @media (max-width: $md3) {
-      transform: translate(0px, -100%);
-      transition: transform 0.8s ease 0s;
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      overflow: auto;
-      padding: 60px 10px 30px 10px;
-      background-color: rgba(255, 255, 255, 0.8);
-      &._active {
-        transform: translate(0px, 0%);
-      }
-    }
-  }
-  &__list {
-    li {
-      margin: 0px 0px 100px 0px;
-    }
-    @media (min-width: $md3) {
-      display: flex;
-      li {
-        margin: 0px 0px 0px 32px;
-        &:last-child {
-          margin: 0px 0px 0px 32px;
-        }
-      }
-    }
-  }
-  &__link {
-    color: $main-color;
-    font-size: $fz--m;
-    font-weight: $weight;
-    line-height: $lh-xxs;
-    transition: all 0.3s ease 0s;
-    @media (min-width: $md2) {
-      &:hover {
-        color: $button-text-color;
-      }
-    }
-    @media (max-width: $md3) {
-      font-size: $lh-xl;
-      display: block;
-      text-align: center;
-    }
-  }
-  &__button {
-    @media (max-width: $md1) {
-      display: none;
-    }
-  }
-}
+// .header__container {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   text-align: center;
+//   justify-content: space-between;
+// }
 
-//burger
-// .icon-menu {
+// .header__content {
+//   padding: 35px 50px; /* Внутренний отступ сверху и сбоку */
+//   margin: 0 auto; /* Центрирование по горизонтали */
+
+//   @media (max-width: $md1) {
+//     padding: 35px 10px 10px; /* Уменьшенный внутренний отступ для маленьких экранов */
+//   }
+// }
+
+// /* Общие стили для блока .header__menu */
+// .header__menu {
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-items: center;
+//   justify-content: space-between;
+
+//   @media (max-width: $md1) {
+//     flex-direction: column; /* Переход к вертикальному расположению на маленьких экранах */
+//     align-items: center; /* Выравнивание по центру */
+//     gap: 10px; /* Равномерный отступ между элементами */
+//   }
+// }
+
+// /* Стили для блока .menu__body с анимацией выезда на маленьких экранах */
+// .menu__body {
+//   @media (max-width: $md3) {
+//     transform: translate(0, -100%); /* Скрытое положение выше экрана */
+//     transition: transform 0.8s ease; /* Плавная анимация */
+//     position: fixed;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     overflow: auto;
+//     padding: 60px 10px 30px 10px; /* Внутренний отступ */
+//     background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+
+//     &._active {
+//       transform: translate(0, 0); /* Показывать блок при активации */
+//     }
+//   }
+// }
+
+// /* Стили для списка .menu__list */
+// .menu__list {
+//   display: flex;
+
+//   @media (max-width: $md3) {
+//     flex-direction: column; /* Переход к вертикальному расположению на маленьких экранах */
+//   }
+
+//   li {
+//     margin-right: 32px;
+
+//     &:last-child {
+//       margin-right: 0;
+//       padding-right: 15px;
+//     }
+//   }
+// }
+
+// /* Стили для ссылок внутри .menu__list */
+// .menu__link {
+//   color: $main-color;
+//   font-size: $fz--m;
+//   font-weight: $weight;
+//   line-height: $lh-xxs;
+//   transition: all 0.3s ease;
+
+//   @media (min-width: $md2) {
+//     &:hover {
+//       color: $button-text-color;
+//     }
+//   }
+
+//   @media (max-width: $md3) {
+//     font-size: $lh-xl;
+//     display: block;
+//     text-align: center;
+//   }
+// }
+
+// /* Стили для кнопки .menu__button на маленьких экранах */
+// .menu__button {
+//   @media (max-width: $md1) {
+//     display: none; /* Скрыть кнопку на маленьких экранах */
+//   }
 // }

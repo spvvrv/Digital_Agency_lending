@@ -1,104 +1,111 @@
 .process {
   background: url(../images/process-bg.png) top no-repeat;
-  &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 184px;
-    padding-bottom: 184px;
-    @media (max-width: $md1) {
-      padding-bottom: 90px;
-      padding-top: 45px;
-    }
-  }
-  &__subtitle {
-    opacity: 1;
-    max-width: 718px;
-    margin-bottom: 3.2rem;
-  }
+  background-size: cover;
+}
+.process__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 184px;
+  padding-bottom: 184px;
+}
+.process__subtitle {
+  opacity: 1;
+  max-width: 718px;
+  margin-bottom: 3.2rem;
+}
 
-  &__cards {
-    display: flex;
-    flex-direction: column;
+.process__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+  padding: 0 10px;
+}
+.process__cards-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 323px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 20px 50px 0px rgba(59, 62, 67, 0.05);
+  width: 100%;
+  gap: 40px;
+}
+.card__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.card__content {
+  max-width: 530px;
+  display: flex;
+  flex-direction: column;
+  // padding: 8rem 6.8rem 8rem 6.8rem;
+  text-align: start;
+}
+.card__content-icon {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+// media
+
+@media (max-width: $md1) {
+  .process__content {
+    padding-bottom: 90px;
+    padding-top: 45px;
+  }
+  .process__cards-card {
+    flex-direction: column-reverse;
+    height: auto;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
-    width: 100%;
-    padding: 0 10px;
+    text-align: center;
+    gap: 0;
   }
-  &__cards-card {
-    display: flex;
-    align-items: center;
-    height: 323px;
-    flex-shrink: 0;
-    border-radius: 15px;
-    background: #fff;
-    box-shadow: 0px 20px 50px 0px rgba(59, 62, 67, 0.05);
-    width: 100%;
-    @media (max-width: $md1) {
-      flex-direction: column-reverse;
-      height: auto;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-  }
-  &__img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .card__content {
+    padding: 2rem 3.8rem 2rem 3.8rem;
     justify-content: center;
+    align-items: center;
     text-align: center;
   }
-  &__cards-card-info {
-    display: flex;
-    flex-direction: column;
-  }
-  &__cards-card-content {
-    display: flex;
-    flex-direction: column;
-    padding: 8rem 6.8rem 8rem 6.8rem;
-    text-align: start;
-    @media (max-width: $md1) {
-      padding: 2rem 3.8rem 2rem 3.8rem;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    .card__content-icon {
-      display: flex;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      width: 50px;
-      height: 50px;
-      border-radius: 15px;
-    }
-    .icon-orange {
-      background: #ffe7db;
-    }
-    .icon-green {
-      background: #e7f2ef;
-    }
-    .icon-yellow {
-      background: #faf3d8;
-    }
-    .icon-dark-green {
-      background: #c0f2ef;
-    }
-    .icon-purple {
-      background: #ede7f2;
-    }
-    .icon-blue {
-      background: #d8f0fa;
-    }
-    .icon-blue-dark {
-      background: #dae6ff;
-    }
-    .icon-pink {
-      background: #e9e5ff;
-    }
-  }
+}
+
+.icon-orange {
+  background: #ffe7db;
+}
+.icon-green {
+  background: #e7f2ef;
+}
+.icon-yellow {
+  background: #faf3d8;
+}
+.icon-dark-green {
+  background: #c0f2ef;
+}
+.icon-purple {
+  background: #ede7f2;
+}
+.icon-blue {
+  background: #d8f0fa;
+}
+.icon-blue-dark {
+  background: #dae6ff;
+}
+.icon-pink {
+  background: #e9e5ff;
 }
