@@ -144,7 +144,6 @@ export const watch = () => {
 export const build = gulp.series(
   reset,
   html,
-  gulp.parallel(styles, scripts, images),
-  watch
+  gulp.parallel(styles, scripts, images)
 );
-
+export const dev = gulp.series(build, watch);
