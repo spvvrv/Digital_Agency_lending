@@ -12,5 +12,5 @@
 
 Для сборки проекта используется планировщик задач Gulp.
 Скрипт для сборки:
-
-- gulp build - сборка в development-режиме и запуск dev-server
+- npm run build
+- npm run dev
