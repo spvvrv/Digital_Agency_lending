@@ -3,7 +3,7 @@ body._lock {
 }
 
 .starting-page {
-  background: url(../images/hero-bg.png) top no-repeat;
+  background: url(../images/hero-bg.png) top/cover no-repeat;
   background-position: center calc(-19% + 0px);
 }
 
@@ -64,6 +64,11 @@ body._lock {
     background: url(../images/hero-bg.png) top/cover no-repeat;
     background-position: center calc(-19% + 0px);
   }
+  .header__menu {
+    img {
+      max-width: 70%;
+    }
+  }
   .btn__get-started {
     display: none;
   }
@@ -80,8 +85,8 @@ body._lock {
     display: block;
     z-index: 500;
     position: relative;
-    width: 50px;
-    height: 40px;
+    width: 40px;
+    height: 30px;
     cursor: pointer;
     top: 0;
     left: 0;
@@ -156,5 +161,12 @@ body._lock {
   .menu__link {
     font-size: 5rem;
     color: #fff;
+  }
+}
+
+@media (max-width: $md2) {
+  .menu__icon {
+    width: 30px;
+    height: 20px;
   }
 }
