@@ -1,6 +1,7 @@
 import gulp from 'gulp';
 import del from 'del';
-import dartSass from 'sass';
+import * as dartSass from 'sass';
+
 import gulpSass from 'gulp-sass';
 const sass = gulpSass(dartSass);
 import rename from 'gulp-rename';
@@ -20,6 +21,7 @@ import browsersync from 'browser-sync';
 // import  gulpPug from 'gulp-pug'
 browsersync.create();
 import fileinclude from 'gulp-file-include';
+
 
 const paths = {
   styles: {
@@ -133,6 +135,7 @@ export const watch = () => {
     server: {
       baseDir: './dist/',
     },
+    port: 3000,
   });
   gulp.watch(paths.html.dest).on('change', browsersync.reload);
   gulp.watch(paths.html.src, html);
@@ -146,4 +149,5 @@ export const build = gulp.series(
   html,
   gulp.parallel(styles, scripts, images)
 );
+
 export const dev = gulp.series(build, watch);
