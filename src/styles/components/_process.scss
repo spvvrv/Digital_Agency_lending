@@ -17,6 +17,10 @@
   margin-bottom: 3.2rem;
 }
 
+.process__cards-container {
+  position: relative;
+}
+
 .process__cards {
   display: flex;
   flex-direction: column;
@@ -26,11 +30,23 @@
   width: 100%;
   padding: 0 10px;
 }
+
+.process__cards-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  border-left: 2px dashed #fff; /* Замените your_color_here на желаемый цвет */
+  z-index: 0;
+}
 .process__cards-card {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 323px;
+  min-height: 323px;
   flex-shrink: 0;
   border-radius: 15px;
   background: #fff;
@@ -44,13 +60,26 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow: hidden;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.card__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 .card__content {
   max-width: 530px;
   display: flex;
   flex-direction: column;
-  // padding: 8rem 6.8rem 8rem 6.8rem;
+  align-items: start;
+  justify-content: center;
   text-align: start;
+  height: 100%;
 }
 .card__content-icon {
   display: flex;
@@ -82,6 +111,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  .process__cards-container::before {
+    z-index: -1;
   }
 }
 
